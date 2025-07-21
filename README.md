@@ -1,14 +1,41 @@
-# Full_stack_project
-.
+# 📝 Fullstack Notes App
+
+A simple full-stack web app built with:
+
+- Frontend: React.js (Vite)
+- Backend: FastAPI (Python) + SQLite
+- Docker & Docker Compose support
+
+## 🚀 Features
+- Create, list, and delete notes
+- Basic login authentication (username: admin, password: secret)
+- Backend API: /notes (GET, POST, DELETE)
+- Docker support to run frontend & backend together
+
+## 📦 Project structure
+```
+fullstack-notes-app/
 ├── backend/
-│   ├── main.py               # FastAPI backend entry point
-│   └── requirements.txt      # Python dependencies
+│   ├── main.py
+│   ├── requirements.txt
+│   └── Dockerfile
 ├── frontend/
-│   ├── src/
-│   │   ├── App.js            # React main app component
-│   │   └── index.js          # React entry point
-│   ├── public/
-│   │   └── index.html        # HTML template
-│   └── package.json          # Node.js dependencies & scripts
-├── docker-compose.yml        # Docker multi-service config
-└── README.md                 # Project documentation
+│   ├── src/App.jsx
+│   ├── package.json
+│   └── Dockerfile
+├── docker-compose.yml
+└── README.md
+```
+
+## 🐳 Run with Docker Compose
+```bash
+docker-compose up --build
+```
+
+## ☁️ Deploy instructions
+- Backend: Deploy on Render (Python web service)
+- Frontend: Deploy on Vercel / Netlify
+
+## ✏️ Default login
+- Username: `admin`
+- Password: `secret`
